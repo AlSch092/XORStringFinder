@@ -87,6 +87,8 @@ int main(int argc, char* argv[])
     std::string input = argv[2];
     std::vector<uint8_t> inputBytes;
 
+    std::cout << "Starting search on input: " << input << std::endl;
+
     if (mode == "--string") 
     {
         inputBytes = parseStringInput(input);
